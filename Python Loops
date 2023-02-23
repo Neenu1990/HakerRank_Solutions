@@ -1,0 +1,22 @@
+Task
+The provided code stub reads and integer,n , from STDIN. For all non-negative integers i<n, print i*i.
+
+Sample Input 
+
+5
+Sample Output 
+
+0
+1
+4
+9
+16
+
+Solution
+
+if __name__ == '__main__':
+    n = int(input())
+    
+    for i in range(0,n):
+            print(i*i)
+
