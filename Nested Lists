@@ -38,3 +38,27 @@ Berry
 Harry
 
 Solution
+
+    scores = []
+    grades = []
+    n = int(input())
+    for i in range(n):
+        name = input()
+        score = float(input())
+        grades.append([name,score])
+        scores.append(score)
+        
+    scores.sort()
+    second_min = 0
+    minimum = scores[0]
+    grades.sort()
+    for i in scores:
+        if i != minimum:
+            second_min = i
+            break
+    
+    for i in grades:
+        if i[1] == second_min:
+
+            print(i[0])
+        
